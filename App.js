@@ -22,6 +22,38 @@ const instructions = Platform.select({
 
 
 
+type Props = {};
+export default class App extends Component<Props> {
+  render() {
+
+    let pic = {
+      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+    };
+    
+    return (
+      //default
+      /*<View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native! CRM 1
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit App.js
+        </Text>
+        <Text style={styles.instructions}>
+          {instructions}
+        </Text>
+        <Text style={styles.instructions}>
+          {"\n"} {"\n"} {instructions} 
+        </Text>
+      </View>
+      */
+
+      //Image
+      <Image source={pic} style={{width: 300, height: 110}}/>
+
+    );
+  }
+}
 
 
 class Greeting extends Component {
